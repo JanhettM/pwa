@@ -1,17 +1,21 @@
-//instalación de sw
+
 var url = window.location.href;
-var swLocation = '/pwa/sw.js';
+var swLocation = '/twittor/sw.js';
+
 
 if ( navigator.serviceWorker ) {
 
-    //cuando se trata de local host cambia la ubicacion del sw
-    if (url.includes('localhost')) {
+
+    if ( url.includes('localhost') ) {
         swLocation = '/sw.js';
     }
 
-    
-   navigator.serviceWorker.register('/sw.js'); 
+
+    navigator.serviceWorker.register( swLocation );
 }
+
+
+
 
 
 // Referencias de jQuery

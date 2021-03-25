@@ -1,4 +1,4 @@
-//importa un nuevo archivo al sw
+// imports
 importScripts('js/sw-utils.js');
 
 
